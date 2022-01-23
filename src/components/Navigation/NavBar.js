@@ -101,7 +101,7 @@ const ResponsiveAppBar = () => {
                         onClick={handleCloseNavMenu}
                         color="inherit"
                         sx={{ my: 2, display: "block", ml: 5 }}
-                        href={"/kushal_portfolio.github.io/" + page}
+                        href={"/kushal_portfolio/" + page}
                       >
                         <Typography variant="h6" color={"white"}>
                           {page}
@@ -118,11 +118,8 @@ const ResponsiveAppBar = () => {
       {/* <LinearProgress color="success" variant="query" /> */}
       {/* Routing... */}
       <Routes>
-        <Route path="/kushal_portfolio.github.io/" element={<Home />} />
-        <Route
-          path="/kushal_portfolio.github.io//Projects"
-          element={<Projects />}
-        />
+        <Route path="/kushal_portfolio/kushal_portfolio" element={<Home />} />
+        <Route path="/kushal_portfolio/Projects" element={<Projects />} />
         <Route path="/kushal_portfolio/Blogs" element={<Blogs />} />
         <Route path="/kushal_portfolio/Contact" element={<Contact />} />
         <Route path="/kushal_portfolio/About" element={<About />} />
