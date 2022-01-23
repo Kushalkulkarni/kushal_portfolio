@@ -118,7 +118,7 @@ const ResponsiveAppBar = () => {
       {/* <LinearProgress color="success" variant="query" /> */}
       {/* Routing... */}
       <Routes>
-        <Route path="/kushal_portfolio/" element={<Home />} />
+        <Route path="/kushal_portfolio" element={<Home />} />
         <Route path="/kushal_portfolio/Projects" element={<Projects />} />
         <Route path="/kushal_portfolio/Blogs" element={<Blogs />} />
         <Route path="/kushal_portfolio/Contact" element={<Contact />} />
