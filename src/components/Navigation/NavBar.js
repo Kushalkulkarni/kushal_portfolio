@@ -74,7 +74,11 @@ const ResponsiveAppBar = () => {
             <Grid container xs={10}>
               <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                  <Button variant="text" href="/" color="secondary">
+                  <Button
+                    variant="text"
+                    href="/kushal_portfolio/"
+                    color="secondary"
+                  >
                     <Typography
                       fontFamily={"Bangers"}
                       fontWeight={200}
@@ -99,7 +103,7 @@ const ResponsiveAppBar = () => {
                         sx={{ my: 2, display: "block", ml: 5 }}
                         href={"/" + page}
                       >
-                        <Typography variant="h6" color={'white'} >
+                        <Typography variant="h6" color={"white"}>
                           {page}
                         </Typography>
                       </Button>
@@ -114,11 +118,11 @@ const ResponsiveAppBar = () => {
       {/* <LinearProgress color="success" variant="query" /> */}
       {/* Routing... */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Blogs" element={<Blogs />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/kushal_portfolio/" element={<Home />} />
+        <Route path="/kushal_portfolio/Projects" element={<Projects />} />
+        <Route path="/kushal_portfolio/Blogs" element={<Blogs />} />
+        <Route path="/kushal_portfolio/Contact" element={<Contact />} />
+        <Route path="/kushal_portfolio/About" element={<About />} />
         {/* error - last route... */}
         <Route path="*" element={<ErrorPage />} />
       </Routes>
