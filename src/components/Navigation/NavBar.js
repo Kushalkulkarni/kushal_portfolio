@@ -124,7 +124,7 @@ const ResponsiveAppBar = () => {
         <Route path="/kushal_portfolio/Contact" element={<Contact />} />
         <Route path="/kushal_portfolio/About" element={<About />} />
         {/* error - last route... */}
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
