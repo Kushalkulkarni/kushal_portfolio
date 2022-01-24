@@ -118,10 +118,19 @@ const ResponsiveAppBar = () => {
       {/* <LinearProgress color="success" variant="query" /> */}
       {/* Routing... */}
       <Routes>
-        <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
-        <Route path="/kushal_portfolio.github.io/Projects" element={<Projects />} />
+        <Route
+          path={process.env.PUBLIC_URL + "/kushal_portfolio.github.io/"}
+          element={<Home />}
+        />
+        <Route
+          path="/kushal_portfolio.github.io/Projects"
+          element={<Projects />}
+        />
         <Route path="/kushal_portfolio.github.io/Blogs" element={<Blogs />} />
-        <Route path="/kushal_portfolio.github.io/Contact" element={<Contact />} />
+        <Route
+          path="/kushal_portfolio.github.io/Contact"
+          element={<Contact />}
+        />
         <Route path="/kushal_portfolio.github.io/About" element={<About />} />
         {/* error - last route... */}
         <Route path="*" element={<ErrorPage />} />
