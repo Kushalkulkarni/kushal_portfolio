@@ -2,7 +2,7 @@
   "name": "portfolio-kk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Kushalkulkarni.github.io/",
+  "homepage": "https://kushalkulkarni.github.io/kushal_portfolio.github.io/",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -24,8 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
