@@ -62,7 +62,7 @@ const ResponsiveAppBar = () => {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <AppBar
         position="sticky"
         enableColorOnDark
@@ -76,7 +76,7 @@ const ResponsiveAppBar = () => {
                 <Toolbar disableGutters>
                   <Button
                     variant="text"
-                    href="/kushal_portfolio/"
+                    href="/kushal_portfolio"
                     color="secondary"
                   >
                     <Typography
@@ -118,13 +118,13 @@ const ResponsiveAppBar = () => {
       {/* <LinearProgress color="success" variant="query" /> */}
       {/* Routing... */}
       <Routes>
-        <Route path="/kushal_portfolio/kushal_portfolio" element={<Home />} />
+        <Route path="/kushal_portfolio" element={<Home />} />
         <Route path="/kushal_portfolio/Projects" element={<Projects />} />
         <Route path="/kushal_portfolio/Blogs" element={<Blogs />} />
         <Route path="/kushal_portfolio/Contact" element={<Contact />} />
         <Route path="/kushal_portfolio/About" element={<About />} />
         {/* error - last route... */}
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
