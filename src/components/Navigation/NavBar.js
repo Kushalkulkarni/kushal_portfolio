@@ -22,7 +22,7 @@ import About from "../../Layout/About";
 import ErrorPage from "../../Layout/ErrorPage";
 
 //Router
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, HashRouter } from "react-router-dom";
 
 //Theme
 import { themeLight } from "../../theme/themeLight";
@@ -62,7 +62,7 @@ const ResponsiveAppBar = () => {
 
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <AppBar
         position="sticky"
         enableColorOnDark
@@ -126,7 +126,7 @@ const ResponsiveAppBar = () => {
         {/* error - last route... */}
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 export default ResponsiveAppBar;
